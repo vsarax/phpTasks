@@ -36,10 +36,10 @@ class RankingTable {
     }
 
     public function playerRank($rank) {
-        $scores = array();
-        $games = array();
-        $names = array();
-        
+        $scores = [];
+        $games = [];
+        $names = [];
+
         foreach ($this->playersTable as $player) {
             $scores[] = $player->score;
             $games[] = $player->games;
