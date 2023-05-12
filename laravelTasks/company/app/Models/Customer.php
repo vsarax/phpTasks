@@ -18,4 +18,9 @@ class Customer extends Model
     {
         return $this->hasOne(Employee::class);
     }
+
+    public function cars()
+    {
+        return $this->hasMany(Car::class);
+    }
 }
