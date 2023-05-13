@@ -1,6 +1,7 @@
 <?php
 
 class TextInput {
+    
     protected $value = '';
 
     public function add($text) {

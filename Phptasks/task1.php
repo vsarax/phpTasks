@@ -1,6 +1,7 @@
 <?php
 
 class Pipeline {
+    
     public static function make(...$functions) {
         return function ($arg) use ($functions) {
             foreach ($functions as $function) {

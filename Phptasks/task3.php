@@ -1,6 +1,7 @@
 <?php
 
 class Player {
+    
     public $name;
     public $score = 0;
     public $games = 0;
