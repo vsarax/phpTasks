@@ -36,5 +36,3 @@ class RentCarController extends Controller {
         return view('cars.rentform', compact('car'));
     }
 }
-
-

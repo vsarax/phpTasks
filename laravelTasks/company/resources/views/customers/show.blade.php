@@ -11,12 +11,13 @@
     </head>
     <body>
         <h1>Customer: {{ $customer->id }}</h1>
-        <p>Customer: {{ $customer->name }} {{ $customer->surname }}</p>
+        <p>Customer: {{ $customer->name }} {{ $customer->surname }}, email: {{ $customer->email }}</p>
         <p>Employee: {{ $employee->name }} {{ $employee->surname }}</p>
         <h2>Last 10 orders:</h2>
         <ul>
             @foreach ($orders as $order)
                 <li>{{ $order->item }} ({{ $order->quantity }})</li>
+                <p>Order value: {{ $order->value}}</p>
             @endforeach
         </ul>
     </body>

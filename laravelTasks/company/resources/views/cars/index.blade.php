@@ -12,7 +12,6 @@
     <body>
         <div class="list-wrapper">
             <h1>List of cars</h1>
-
             @foreach ($listCars as $listCar)
                 <h3>Car: {{$listCar->model}}, {{$listCar->year}}, {{$listCar->available ? 'available' : 'unavailable'}}</h3>
                 @if ($listCar->available)
@@ -24,4 +23,5 @@
                     <p>Rented by: {{$listCar->customer->name}} {{$listCar->customer->surname}}</p>
                 @endif
             @endforeach
-</body>
+    </body>
+</html>

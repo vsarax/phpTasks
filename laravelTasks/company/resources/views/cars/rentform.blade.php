@@ -26,3 +26,5 @@
                 <button type="submit">Rent</button>
         </form>
     </body>
+</html>
+
